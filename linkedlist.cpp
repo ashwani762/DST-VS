@@ -71,7 +71,7 @@ void execute_linked()
 		default:
 			printf("\n Wrong Choice:\n");
 			break;
-		}//end of switch()
+		}
 	}
 }
 
@@ -127,9 +127,9 @@ void display(int n)
 			ptr = ptr->next;
 		}
 		printf("\t|       |\n\t| %3d  |\n\t|_______|\n\t|       |\n\t| Next  |\n\t|_______|\n|\n|\n   V   \nNULL", ptr->data);
-		//end of while
-	}//end of else
-}//end of display()
+		
+	}
+}
 
 
 void insert_begin()
@@ -155,7 +155,7 @@ void insert_begin()
 		start = temp;
 		cnt++;
 	}
-}//end of insert_begin()
+}
 void insert_end()
 {
 	node *temp, *ptr;
@@ -183,7 +183,7 @@ void insert_end()
 		ptr->next = temp;
 		cnt++;
 	}
-}//end of insert_end
+}
 
 void insert_pos()
 {
@@ -221,8 +221,8 @@ void insert_pos()
 		temp->next = ptr->next;
 		ptr->next = temp;
 		cnt++;
-	}//end of else
-}//end of insert_pos
+	}
+}
 void delete_begin()
 {
 	node *ptr;
@@ -239,7 +239,7 @@ void delete_begin()
 		free(ptr);
 		cnt--;
 	}
-}//end of delete_begin()
+}
 void delete_end()
 {
 	node *temp, *ptr;
@@ -269,7 +269,7 @@ void delete_end()
 		free(ptr);
 		cnt--;
 	}
-}//end of delete_begin()
+}
 void delete_pos()
 {
 	int i, pos;
@@ -309,5 +309,5 @@ void delete_pos()
 			free(ptr);
 			cnt--;
 		}
-	}//end of else
-}//end of delete_pos()
+	}
+}
