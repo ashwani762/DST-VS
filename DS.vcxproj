@@ -87,10 +87,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);$(ProjectDir)lib\pdcurses.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -113,12 +116,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);$(ProjectDir)lib\pdcurses.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -141,17 +147,68 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bubble.h" />
+    <ClInclude Include="functions.h" />
+    <ClInclude Include="linear.h" />
+    <ClInclude Include="linkedlist.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="merge.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bubble.cpp" />
     <ClCompile Include="DS.cpp" />
+    <ClCompile Include="functions.cpp" />
+    <ClCompile Include="linear.cpp" />
+    <ClCompile Include="linkedlist.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="merge.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="visualization\AlgorithmLibrary\Algorithm.js" />
+    <None Include="visualization\AlgorithmLibrary\ComparisonSort.js" />
+    <None Include="visualization\AlgorithmLibrary\EventTest.js" />
+    <None Include="visualization\AlgorithmLibrary\QueueArray.js" />
+    <None Include="visualization\AlgorithmLibrary\QueueLL.js" />
+    <None Include="visualization\AlgorithmLibrary\Search.js" />
+    <None Include="visualization\AlgorithmLibrary\SimpleStack.js" />
+    <None Include="visualization\AlgorithmLibrary\StackArray.js" />
+    <None Include="visualization\AlgorithmLibrary\StackLL.js" />
+    <None Include="visualization\Algorithms.html" />
+    <None Include="visualization\AnimationLibrary\AnimatedBTreeNode.js" />
+    <None Include="visualization\AnimationLibrary\AnimatedCircle.js" />
+    <None Include="visualization\AnimationLibrary\AnimatedLabel.js" />
+    <None Include="visualization\AnimationLibrary\AnimatedLinkedList.js" />
+    <None Include="visualization\AnimationLibrary\AnimatedObject.js" />
+    <None Include="visualization\AnimationLibrary\AnimatedRectangle.js" />
+    <None Include="visualization\AnimationLibrary\AnimationMain.js" />
+    <None Include="visualization\AnimationLibrary\CustomEvents.js" />
+    <None Include="visualization\AnimationLibrary\HighlightCircle.js" />
+    <None Include="visualization\AnimationLibrary\Line.js" />
+    <None Include="visualization\AnimationLibrary\ObjectManager.js" />
+    <None Include="visualization\AnimationLibrary\UndoFunctions.js" />
+    <None Include="visualization\ComparisonSort.html" />
+    <None Include="visualization\QueueArray.html" />
+    <None Include="visualization\QueueLL.html" />
+    <None Include="visualization\Search.html" />
+    <None Include="visualization\SimpleStack.html" />
+    <None Include="visualization\StackArray.html" />
+    <None Include="visualization\StackLL.html" />
+    <None Include="visualization\ThirdParty\jquery-1.5.2.min.js" />
+    <None Include="visualization\ThirdParty\jquery-ui-1.8.11.custom.css" />
+    <None Include="visualization\ThirdParty\jquery-ui-1.8.11.custom.min.js" />
+    <None Include="visualization\ThirdParty\test" />
+    <None Include="visualization\visualizationPageStyle.css" />
+    <None Include="visualization\visualPages.css" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

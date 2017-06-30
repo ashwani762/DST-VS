@@ -1,0 +1,7 @@
+void linear(){
+	for(i=0;i<n;i++){
+		if(item==a[i]){
+			printf("Element Found at Location %d",i+1);
+		}
+	}	
+}
