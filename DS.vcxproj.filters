@@ -15,7 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
     <Text Include="README.md" />
   </ItemGroup>
   <ItemGroup>
@@ -73,40 +72,5 @@
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
-    <None Include="visualization\ThirdParty\test" />
-    <None Include="visualization\ThirdParty\jquery-ui-1.8.11.custom.css" />
-    <None Include="visualization\ThirdParty\jquery-ui-1.8.11.custom.min.js" />
-    <None Include="visualization\ThirdParty\jquery-1.5.2.min.js" />
-    <None Include="visualization\AnimationLibrary\AnimatedBTreeNode.js" />
-    <None Include="visualization\AnimationLibrary\AnimatedCircle.js" />
-    <None Include="visualization\AnimationLibrary\AnimatedLabel.js" />
-    <None Include="visualization\AnimationLibrary\AnimatedLinkedList.js" />
-    <None Include="visualization\AnimationLibrary\AnimatedObject.js" />
-    <None Include="visualization\AnimationLibrary\AnimatedRectangle.js" />
-    <None Include="visualization\AnimationLibrary\AnimationMain.js" />
-    <None Include="visualization\AnimationLibrary\CustomEvents.js" />
-    <None Include="visualization\AnimationLibrary\HighlightCircle.js" />
-    <None Include="visualization\AnimationLibrary\Line.js" />
-    <None Include="visualization\AnimationLibrary\ObjectManager.js" />
-    <None Include="visualization\AnimationLibrary\UndoFunctions.js" />
-    <None Include="visualization\AlgorithmLibrary\Algorithm.js" />
-    <None Include="visualization\AlgorithmLibrary\ComparisonSort.js" />
-    <None Include="visualization\AlgorithmLibrary\EventTest.js" />
-    <None Include="visualization\AlgorithmLibrary\QueueArray.js" />
-    <None Include="visualization\AlgorithmLibrary\QueueLL.js" />
-    <None Include="visualization\AlgorithmLibrary\Search.js" />
-    <None Include="visualization\AlgorithmLibrary\SimpleStack.js" />
-    <None Include="visualization\AlgorithmLibrary\StackArray.js" />
-    <None Include="visualization\AlgorithmLibrary\StackLL.js" />
-    <None Include="visualization\Algorithms.html" />
-    <None Include="visualization\ComparisonSort.html" />
-    <None Include="visualization\QueueArray.html" />
-    <None Include="visualization\QueueLL.html" />
-    <None Include="visualization\Search.html" />
-    <None Include="visualization\SimpleStack.html" />
-    <None Include="visualization\StackArray.html" />
-    <None Include="visualization\StackLL.html" />
-    <None Include="visualization\visualizationPageStyle.css" />
-    <None Include="visualization\visualPages.css" />
   </ItemGroup>
 </Project>
