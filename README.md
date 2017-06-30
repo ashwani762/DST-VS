@@ -10,3 +10,7 @@ Just Import the project and press <kbd>F5</kbd> to run.
 - [ ] Add All sortings
 - [ ] Add Stack and Queue program
 - [ ] Add theory and algo 
+
+### Libraries used ###
+
+- pdcurses
